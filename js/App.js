@@ -1,39 +1,37 @@
 const ArryInfo = [
   {
-    Project: "Html Introduction",
-    Work: "Exercise",
-    Days: "Monday"
+    Project: 'Html Introduction',
+    Work: 'Exercise',
+    Days: 'Monday',
   },
 
   {
-    Project: "Html Introduction",
-    Work: "Project",
-    Days: "Tuesday"
+    Project: 'Html Introduction',
+    Work: 'Project',
+    Days: 'Tuesday',
   },
 
   {
-    Project: "Html Introduction",
-    Work: "Exercise",
-    Days: "Wednesday"
+    Project: 'Html Introduction',
+    Work: 'Exercise',
+    Days: 'Wednesday',
   },
 
   {
-    Project: "Html Introduction",
-    Work: "Project",
-    Days: "Thursday"
+    Project: 'Html Introduction',
+    Work: 'Project',
+    Days: 'Thursday',
   },
 
   {
-    Project: "Html Introduction",
-    Work: "Quiz",
-    Days: "Friday"
+    Project: 'Html Introduction',
+    Work: 'Quiz',
+    Days: 'Friday',
   },
 
-]
+];
 
-console.log(ArryInfo)
-
-const rightNavContent = document.querySelector(".rightNavContent")
+const rightNavContent = document.querySelector('.rightNavContent');
 ArryInfo.forEach((element) => {
   const reander = `
   <div class="navRows">
@@ -42,6 +40,6 @@ ArryInfo.forEach((element) => {
   <h4> ${element.Days} </h4>
   <button> Submit </button>
 </div>
-  `
-  rightNavContent.innerHTML += reander
+  `;
+  rightNavContent.innerHTML += reander;
 });

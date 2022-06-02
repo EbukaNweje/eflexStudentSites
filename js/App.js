@@ -31,6 +31,8 @@ const ArryInfo = [
 
 ];
 
+// console.log('ArryInfo', ArryInfo)
+
 const rightNavContent = document.querySelector('.rightNavContent');
 ArryInfo.forEach((element) => {
   const reander = `
@@ -43,3 +45,28 @@ ArryInfo.forEach((element) => {
   `;
   rightNavContent.innerHTML += reander;
 });
+
+document.getElementById('SignOut').addEventListener('click', Signouts)
+
+function Signouts(){
+  sessionStorage.removeItem('user');
+  localStorage.removeItem('user');
+  localStorage.removeItem('keeploggedIn');
+  window.location= "index.html"
+}
+
+const Data = JSON.parse(sessionStorage.getItem('user'))
+console.log(Data)
+
+const NameShow = document.getElementById('NameShow')
+NameShow.innerHTML += "Hello! " + Data.fullname
+
+const profile = document.querySelector('.profile')
+profile.style.backgroundImage = `url(${Data.profile})`
+
+const today = new Date()
+const date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate() + ' ||' + ' ' + today.getHours() + ":" + today.getMinutes();
+console.log(date)
+
+const DateShow = document.getElementById('Date')
+DateShow.innerHTML += date

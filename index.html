@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 </head>
 <body>
     <nav class="mainbody">
@@ -15,13 +16,13 @@
         <form action="#" class="right new">
                 <div class="eflexLogo"> <img src="./images/Eflexcode.jpg" alt="eflexLogo"></div>
                 <h1> Log in </h1>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button type="submit"> Submit </button>
+                <input type="text" placeholder="Email" id="FullName">
+                <input type="password" placeholder="Password" id="Password1">
+                <button type="submit" id="Submit"> Login </button>
                 <a href="./signUp.html"><h5>or Sign up </h5></a>
         </form>
         </div>
     </nav>
-
+    <script type="module" src="./js/Login.js"></script>
 </body>
 </html>

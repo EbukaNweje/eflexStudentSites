@@ -46,27 +46,25 @@ ArryInfo.forEach((element) => {
   rightNavContent.innerHTML += reander;
 });
 
-document.getElementById('SignOut').addEventListener('click', Signouts)
-
-function Signouts(){
+function Signouts() {
   sessionStorage.removeItem('user');
   localStorage.removeItem('user');
   localStorage.removeItem('keeploggedIn');
-  window.location= "index.html"
+  window.location = 'index.html';
 }
 
-const Data = JSON.parse(sessionStorage.getItem('user'))
-console.log(Data)
+document.getElementById('SignOut').addEventListener('click', Signouts);
 
-const NameShow = document.getElementById('NameShow')
-NameShow.innerHTML += "Hello! " + Data.fullname
+const Data = JSON.parse(sessionStorage.getItem('user'));
 
-const profile = document.querySelector('.profile')
-profile.style.backgroundImage = `url(${Data.profile})`
+const NameShow = document.getElementById('NameShow');
+NameShow.innerHTML += `Hello! ${Data.fullname}`;
 
-const today = new Date()
-const date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate() + ' ||' + ' ' + today.getHours() + ":" + today.getMinutes();
-console.log(date)
+const profile = document.querySelector('.profile');
+profile.style.backgroundImage = `url(${Data.profile})`;
 
-const DateShow = document.getElementById('Date')
-DateShow.innerHTML += date
+const today = new Date();
+const date = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()} || +  ${today.getHours()}:${today.getMinutes()}`;
+
+const DateShow = document.getElementById('Date');
+DateShow.innerHTML += date;

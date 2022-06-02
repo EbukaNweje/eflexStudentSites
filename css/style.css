@@ -99,7 +99,8 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 15px;
   color: rgba(105, 104, 104, 0.297);
-  margin: 10px 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 20px;
 }
 

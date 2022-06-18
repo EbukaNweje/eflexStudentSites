@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mainbody {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 70%;
+  height: 80%;
+  display: flex;
+}
+
+.left {
+  height: 100%;
+  width: 50%;
+  background: url(/images/jUkV4DHjgtYAPqK7jSp8aa-1200-80.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cove {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.right {
+  height: 100%;
+  width: 50%;
+  background-color: #aea6a639;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.new {
+  display: block;
+}
+
+.new input {
+  margin-top: 20px;
+}
+
+.new button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.eflexLogo {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.eflexLogo img {
+  height: 40px;
+}
+
+.right h1 {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.right input {
+  height: 40px;
+  width: 90%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.right label {
+  height: 40px;
+  width: 90%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  color: rgba(105, 104, 104, 0.297);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.right input::placeholder {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  color: rgba(105, 104, 104, 0.297);
+}
+
+.right button {
+  background-color: rgb(4, 4, 48);
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  width: 90%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.right h5 {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.loginLink {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
